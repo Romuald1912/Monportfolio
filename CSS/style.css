@@ -1,0 +1,159 @@
+:root {
+    --noire: #0a0909; /* Il est déconseillé d'utiliser une couleur prédéfinie par VSCode car elle existe en plusieurs nuances*/
+    --blanc: #fcf8f8;
+    --jaune: #ffd70e;
+    --bleu: #0694cc;
+}
+
+*{
+    margin: 5px; /* Marge de 5px autour de tous les éléments */
+    padding: 5px; /* Espace de 10px autour de tous les éléments */
+
+}
+
+.container {
+    margin: 0 150px 0 150px; /* haut droite bas gauche */
+
+}
+
+.navbar {
+    display: flex; /* Afficher les éléments en ligne */
+    justify-content: space-between; /* Espace entre les éléments */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 5px 10px 5px; /* haut droite bas gauche */
+
+}
+
+.logo {
+    width: 100px; /* Ajuster la largeur du logo */
+    height: auto; /* Ajuster la taille du logo */
+}
+
+.menu {
+    list-style: none; /* Supprimer les puces */
+    display: flex; /* Afficher les éléments en ligne */
+    gap: 20px; /* Espace entre les éléments du menu */
+
+
+}
+
+.menu-item {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: var(--noire); /* Couleur du texte des liens */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 15px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    transition: all ; 0.3s ease; /* Transition pour l'effet de survol */
+    padding: 0px 0px; /* Espace autour du texte */
+} 
+
+.menu-item:hover {
+    color: var(--bleu); /* Couleur du texte au survol */
+}
+
+.btn {
+    border: 2px solid var(--jaune); /* Bordure jaune */
+    color: var(--bleu); /* Couleur du texte */
+    padding: 5px; /* Espace autour du texte */
+    border-radius: 15px; /* Coins arrondis */
+    text-transform: uppercase; /* Mettre le texte en majuscules */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 15px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    transition: all ; .5s ease; /* Transition pour l'effet de survol */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    padding: 5px 20px; /* Espace autour du texte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.btn:hover {
+    background-color: var(--jaune); /* Couleur de fond jaune au survol */
+    color: var(--noire); /* Couleur du texte noire au survol */
+}
+
+
+.skill-list {
+    list-style: none ; /* Supprimer les puces */;
+}
+
+.grandtitre {
+    text-align: center; /* Centrer le texte */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 100px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: var(--noire); /* Couleur du texte */
+}
+
+.grandtitre:hover {
+    color: var(--jaune); /* Couleur du texte au survol */
+}
+
+.soustitre {
+    text-align: center; /* Centrer le texte */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 30px; /* Taille de la police */
+    color: var(--noire); /* Couleur du texte */
+}
+
+.btn-inst  {
+    display: inline-block; /* Afficher le bouton en ligne */
+    justify-content: center; /*Centrer le bouton*/
+    gap: 150px; /* Espace entre les éléments */
+    background-color: var(--jaune); /* Couleur de fond jaune */
+    color: var(--noire); /* Couleur du texte noire */
+    padding: 10px 20px; /* Espace autour du texte */
+    border-radius: 15px; /* Coins arrondis */
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 15px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    transition: all .5s ease; /* Transition pour l'effet de survol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ombre portée */
+}
+
+.btn-inst:hover {
+    background-color: var(--bleu); /* Couleur de fond bleue au survol */
+    color: var(--blanc); /* Couleur du texte blanche au survol */
+}
+
+.greatitre {
+    text-align: center; /* Centrer le texte */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 50px; /* Taille de la police */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: var(--noire); /* Couleur du texte */
+    padding: auto;
+}
+
+.middletitre {
+    text-align: center; /* Centrer le texte */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 30px; /* Taille de la police */
+    color: var(--noire); /* Couleur du texte */
+    padding: 10px ; /* Espace autour du texte */
+}
+
+.texte {
+    text-align: center; /* Centrer le texte */
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-size: 10px; /* Taille de la police */
+    color: var(--noire); /* Couleur du texte */
+    padding: 10px 20px; /* Espace autour du texte */
+}
+
+@media (max-width: 999px) {
+    .container {
+        margin: 0 20px; /* Réduire la marge pour les écrans plus petits */
+    }
+    .hero {
+        display: block;
+        font-size: 5px;
+    }
+    .navbar {
+    
+    padding: 2px 1px 2px 1px; /* haut droite bas gauche */
+
+}
+
+} /* Adapte le site en fonction de la taille de l'écran*/
